@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I wanna paint you in it, but I'm not good 'Cause you're not just a human being, you are art</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="//storage.caliph71.xyz/img/itsuki.jpg"/>
+    <link rel="shortcut icon" type="image/png" href="//storage.caliph71.xyz/img/itsuki.jpg"/>
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body onload="init()">
+    <audio id="myAudio">
+      <source src="assets/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="myOpening">
+      <source src="assets/opening.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="preload">Loading...</div>
+    <div class="vidcont">
+      <div class="divvideo">
+        <video id="myVideo" width="100%" height="100%">
+          <source src="assets/video.mp4" type="video/mp4" />
+          Your browser doe`s not support HTML5 video.
+        </video>
+      </div>
+    </div>
+    <img src="assets/wp2.jpg" />
+    <div class="container">
+      <div class="myclock">
+        <div class="myakun" id="bulan">
+          <span id="spannama3" onclick="bulan()"></span>
+        </div>
+        <div class="myakun reset" onclick="reverse()">Reset</div>
+        <div class="myakun" onclick="toggleFullscreen()">web by gembrot</div>
+        <div class="contjam">
+          <div class="jam">-:-</div>
+          <div class="tanggal">-</div>
+          <div class="ucapan" onclick="you told me to look everywhere else But I said no, 'cause when I look at you My heart always melts So I stayed even though you're a mess 'cause you're like drugs and with you Yeah, I'm obsessed()"><span id="spannama2"></span></div>
+        </div>
+      </div>
+      <div class="mywindow" id="myform">
+        <div class="mycontrol">
+          <div class="myclose"></div>
+          <div class="mymini"></div>
+          <div class="mymax"></div>
+        </div>
+        <div class="myheader">
+          your colors caught my eye And you're my favorite sight to see
+        </div>
+        <div class="mybody">
+          <div class="mytitle">
+            nama kamu siapa?
+          </div>
+          <div class="mycontent">
+            <div>nama :</div>
+            <input class="mytext" type="text" id="mynama" name="nama" required />
+          </div>
+          <div class="mybutton">
+            <div class="mybuttonyes" onclick="mywrite()">oke</div>
+          </div>
+        </div>
+      </div>
+      <div class="mywindow myanimated myhide" id="mywindow">
+        <div class="mycontrol">
+          <div class="myclose" onclick="reverse()"></div>
+          <div class="mymini"></div>
+          <div class="mymax"></div>
+        </div>
+        <div class="myheader" id="mywindowheader">halo <span id="spannama"></span></div>
+        <div class="mybody">
+          <div class="mytitle">
+            hai cantikkk!!!.
+          </div>
+          <div class="mycontent">
+            happy ga hari ini? <3 YA / TIDAK
+          </div>
+          <div class="mybutton">
+            <div class="mybuttonno" onmouseover="move()" onclick="move2()">tidak</div>
+            <div class="mybuttonyes" onclick="playVid()">iya</div>
+          </div>
+        </div>
+        <div class="myresize"></div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.min.js"></script>
+  </body>
+</html>
